@@ -118,10 +118,10 @@ const Tetris = () => {
           <button onClick={() => move({ keyCode: 39 })}>Right</button>
           <button onClick={() => move({ keyCode: 38 })}>Up</button>
           <button
-            onMouseDown={() => {
+            onClick={() => {
               move({ keyCode: 40 });
-            }}
-            onMouseUp={() => keyUp({ keyCode: 40 })}>
+              keyUp({ keyCode: 40 });
+            }}>
             Down
           </button>
         </StyledMobileButtons>
