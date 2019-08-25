@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
-import bgImage from "../../img/bg.png";
+import bgImage from "../../img/background.webp";
 
 export const StyledTetrisWrapper = styled.div`
   width: 100vw;
   height: 100vh;
-  background: url(${bgImage}#000);
+  background: url(${bgImage}#000) no-repeat center center fixed;
   background-size: cover;
+  background-position: center;
   overflow: hidden;
   outline: none;
 
@@ -21,10 +22,11 @@ export const StyledTetris = styled.div`
   padding: 20px;
   margin: 0 auto;
   max-width: 900px;
+  justify-content: center;
 
   aside {
     width: 100%;
-    max-width: 200px;
+    max-width: 250px;
     display: block;
     padding: 0 20px;
   }
@@ -35,7 +37,7 @@ export const StyledTetris = styled.div`
     align-items: center;
 
     aside {
-      max-width: 75%;
+      max-width: 90%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;

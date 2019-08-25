@@ -6,17 +6,23 @@ export const StyledStartButton = styled.button`
   padding: 20px;
   min-heigth: 30px;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 5px;
   border: none;
-  color: white;
-  background: #333;
+  box-shadow: 1px 1px 4px #555;
+  color: black;
+  background: #3bca66;
   font-family: Pixel, Arial, Helvetica, sans-serif;
   font-size: 1rem;
   outline: none;
   cursor: pointer;
+
+  :hover {
+    box-shadow: 1px 1px 6px #aaa;
+  }
+
   @media (max-width: 768px) {
     width: 40%;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     padding: 5px 20px;
   }
 `;

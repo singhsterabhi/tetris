@@ -13,7 +13,6 @@ import { useGameStatus } from "../hooks/useGameStatus";
 import Stage from "./Stage";
 import Display from "./Display";
 import StartButton from "./StartButton";
-import { from } from "rxjs";
 
 const Tetris = () => {
   const [dropTime, setDropTime] = useState(null);
@@ -119,10 +118,10 @@ const Tetris = () => {
           <button onClick={() => move({ keyCode: 39 })}>Right</button>
           <button onClick={() => move({ keyCode: 38 })}>Up</button>
           <button
-            onClick={() => {
+            onMouseDown={() => {
               move({ keyCode: 40 });
-              keyUp({ keyCode: 40 });
-            }}>
+            }}
+            onMouseUp={() => keyUp({ keyCode: 40 })}>
             Down
           </button>
         </StyledMobileButtons>

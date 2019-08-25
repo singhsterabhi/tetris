@@ -8,16 +8,17 @@ export const StyledStage = styled.div`
   );
   grid-template-columns: repeat(${props => props.width}, 1fr);
   grid-gap: 1px;
-  border: 2px solid #333;
+  border: 2px solid #aaa;
   width: 100%;
   max-width: 25vw;
   background: #111;
 
   @media (max-width: 768px) {
-    max-width: 70vw;
+    background: #333;
+    max-width: 60vw;
     grid-template-rows: repeat(
       ${props => props.height},
-      calc(70vw / ${props => props.width})
+      calc(60vw / ${props => props.width})
     );
   }
 `;
