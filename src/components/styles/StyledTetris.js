@@ -12,6 +12,8 @@ export const StyledTetrisWrapper = styled.div`
   outline: none;
 
   @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
     overflow: scroll;
   }
 `;
